@@ -1,0 +1,19 @@
+# 日本語のコメントは許可する
+Style/AsciiComments:
+  Enabled: false
+# クラスの説明は必須ではない
+Style/Documentation:
+  Enabled: false
+# detect・injectに統一する
+Style/CollectionMethods:
+  PreferredMethods:
+    detect: "detect"
+    find: "detect"
+    inject: "inject"
+    reduce: "inject"
+# コメントの長さはチェックしない
+Layout/LineLength:
+  IgnoredPatterns: ['#']
+# メソッドチェーンの改行は許可する
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
